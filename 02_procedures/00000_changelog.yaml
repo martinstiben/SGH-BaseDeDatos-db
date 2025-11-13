@@ -1,0 +1,18 @@
+databaseChangeLog:
+  # Example changesets for stored procedures
+  - changeSet:
+      id: b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e
+      author: tu.email@company.com
+      context: sgh
+      labels: TICKET-002
+      comment: Create example procedure
+      changes:
+        - tagDatabase:
+            tag: v1.0.1
+        - sqlFile:
+            path: 02_procedures\00001_p_example_procedure.sql
+            endDelimiter: \n//
+            stripComments: false
+      rollback:
+        - sql:
+            DROP PROCEDURE IF EXISTS p_get_user_by_id;

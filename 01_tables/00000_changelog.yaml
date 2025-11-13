@@ -1,0 +1,212 @@
+databaseChangeLog:
+  # Example changesets for tables
+  - changeSet:
+      id: a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d
+      author: tu.email@company.com
+      context: sgh
+      labels: TICKET-001
+      comment: Create example table
+      changes:
+        - tagDatabase:
+            tag: v1.0.0
+        - sqlFile:
+            path: 01_tables\00001_example_table.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00001_example_table_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-people-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create people table
+      changes:
+        - sqlFile:
+            path: 01_tables\00002_people.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00002_people_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-roles-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create roles table
+      changes:
+        - sqlFile:
+            path: 01_tables\00003_roles.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00003_roles_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-users-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create users table
+      changes:
+        - sqlFile:
+            path: 01_tables\00004_users.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00004_users_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-teachers-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create teachers table
+      changes:
+        - sqlFile:
+            path: 01_tables\00005_teachers.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00005_teachers_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-subjects-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create subjects table
+      changes:
+        - sqlFile:
+            path: 01_tables\00006_subjects.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00006_subjects_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-teacher-subjects-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create teacher_subjects table
+      changes:
+        - sqlFile:
+            path: 01_tables\00007_teacher_subjects.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00007_teacher_subjects_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-courses-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create courses table
+      changes:
+        - sqlFile:
+            path: 01_tables\00008_courses.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00008_courses_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-teacher-availability-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create TeacherAvailability table
+      changes:
+        - sqlFile:
+            path: 01_tables\00009_teacher_availability.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00009_teacher_availability_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-schedule-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create schedule table
+      changes:
+        - sqlFile:
+            path: 01_tables\00010_schedule.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00010_schedule_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-schedule-history-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create schedule_history table
+      changes:
+        - sqlFile:
+            path: 01_tables\00011_schedule_history.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00011_schedule_history_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-permissions-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create permissions table
+      changes:
+        - sqlFile:
+            path: 01_tables\00012_permissions.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00012_permissions_rollback.sql
+            endDelimiter: \n;
+            stripComments: false
+  - changeSet:
+      id: ddl-permissions-roles-001
+      author: sistema.sgh@company.com
+      context: sgh
+      labels: DDL-001
+      comment: Create permissions_roles table
+      changes:
+        - sqlFile:
+            path: 01_tables\00013_permissions_roles.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks\01_tables\00013_permissions_roles_rollback.sql
+            endDelimiter: \n;
+            stripComments: false

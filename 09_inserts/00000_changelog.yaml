@@ -1,0 +1,18 @@
+databaseChangeLog:
+  # Example changesets for data inserts
+  - changeSet:
+      id: c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f
+      author: tu.email@company.com
+      context: sgh
+      labels: TICKET-009
+      comment: Insert initial configuration data
+      changes:
+        - tagDatabase:
+            tag: v1.0.8
+        - sqlFile:
+            path: 09_inserts\00001_insert_config_data.sql
+            endDelimiter: \n;
+            stripComments: false
+      rollback:
+        - sql:
+            DELETE FROM example_table WHERE email IN ('admin@sgh.com', 'test@sgh.com', 'demo@sgh.com');

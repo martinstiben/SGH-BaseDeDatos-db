@@ -1,0 +1,16 @@
+databaseChangeLog:
+  # Example changesets for materialized views
+  # Uncomment and modify as needed
+  # - changeSet:
+  #     id: c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f
+  #     author: your.email@company.com
+  #     context: sgh
+  #     labels: TICKET-003
+  #     comment: Create example materialized view
+  #     changes:
+  #       - tagDatabase:
+  #           tag: v1.0.2
+  #       - sqlFile:
+  #           path: 03_materialized_views\00001_mv_example_summary.sql
+  #           endDelimiter: \n;
+  #           stripComments: false

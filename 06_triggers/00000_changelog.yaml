@@ -1,0 +1,16 @@
+databaseChangeLog:
+  # Example changesets for triggers
+  # Uncomment and modify as needed
+  # - changeSet:
+  #     id: f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c
+  #     author: your.email@company.com
+  #     context: sgh
+  #     labels: TICKET-006
+  #     comment: Create example trigger
+  #     changes:
+  #       - tagDatabase:
+  #           tag: v1.0.5
+  #       - sqlFile:
+  #           path: 06_triggers\00001_tr_example_trigger.sql
+  #           endDelimiter: \n;
+  #           stripComments: false

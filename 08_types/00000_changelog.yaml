@@ -1,0 +1,16 @@
+databaseChangeLog:
+  # Example changesets for custom types
+  # Uncomment and modify as needed
+  # - changeSet:
+  #     id: b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e
+  #     author: your.email@company.com
+  #     context: sgh
+  #     labels: TICKET-008
+  #     comment: Create example custom types
+  #     changes:
+  #       - tagDatabase:
+  #           tag: v1.0.7
+  #       - sqlFile:
+  #           path: 08_types\00001_type_example_custom_type.sql
+  #           endDelimiter: \n;
+  #           stripComments: false

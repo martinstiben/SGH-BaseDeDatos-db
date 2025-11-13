@@ -1,0 +1,16 @@
+databaseChangeLog:
+  # Example changesets for functions
+  # Uncomment and modify as needed
+  # - changeSet:
+  #     id: d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a
+  #     author: your.email@company.com
+  #     context: sgh
+  #     labels: TICKET-004
+  #     comment: Create example function
+  #     changes:
+  #       - tagDatabase:
+  #           tag: v1.0.3
+  #       - sqlFile:
+  #           path: 04_functions\00001_f_example_function.sql
+  #           endDelimiter: \n;
+  #           stripComments: false

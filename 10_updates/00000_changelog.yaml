@@ -1,0 +1,16 @@
+databaseChangeLog:
+  # Example changesets for data updates
+  # Uncomment and modify as needed
+  # - changeSet:
+  #     id: d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a
+  #     author: your.email@company.com
+  #     context: sgh
+  #     labels: TICKET-010
+  #     comment: Update configuration values
+  #     changes:
+  #       - tagDatabase:
+  #           tag: v1.0.9
+  #       - sqlFile:
+  #           path: 10_updates\00001_update_config_values.sql
+  #           endDelimiter: \n;
+  #           stripComments: false
